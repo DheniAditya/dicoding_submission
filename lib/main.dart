@@ -1,3 +1,4 @@
+import 'package:dicoding_submission/secondpage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -40,12 +41,16 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: ((context) => secondPage())));
+            },
             child: Text(
-          textAlign: TextAlign.center,
-          overflow: TextOverflow.ellipsis,
-          style: const TextStyle(fontWeight: FontWeight.bold),
-          'Klik Disini!',
-        )),
+              textAlign: TextAlign.center,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(fontWeight: FontWeight.bold),
+              'Klik Disini!',
+            )),
       ),
     );
   }
