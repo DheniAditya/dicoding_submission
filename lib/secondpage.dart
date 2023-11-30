@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class secondPage extends StatelessWidget {
-  const secondPage({super.key});
+class SecondPage extends StatelessWidget {
+  const SecondPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class secondPage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Center(
+          const Center(
             child: Text('Welcome to the second page!'),
           ),
           Center(
@@ -17,11 +17,11 @@ class secondPage extends StatelessWidget {
                 onTap: () {
                   Navigator.pop(context);
                 },
-                child: Text(
+                child: const Text(
                   'Click here to go back',
                   textAlign: TextAlign.center,
                   overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(fontWeight: FontWeight.bold),
+                  style: TextStyle(fontWeight: FontWeight.bold),
                 )),
           ),
         ],
@@ -29,5 +29,3 @@ class secondPage extends StatelessWidget {
     );
   }
 }
-
-

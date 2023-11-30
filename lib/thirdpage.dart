@@ -24,7 +24,7 @@ class _ThirdPageState extends State<ThirdPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Penjumlahan'),
+        title: const Text('Penjumlahan'),
       ),
       body: Center(
         child: Column(
@@ -32,29 +32,29 @@ class _ThirdPageState extends State<ThirdPage> {
           children: <Widget>[
             Text(
               'Total: $_total',
-              style: TextStyle(fontSize: 24),
+              style: const TextStyle(fontSize: 24),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: _incrementCounter,
-              child: Text('Tambah 1'),
+              child: const Text('Tambah 1'),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             ElevatedButton(
               onPressed: _decrementCounter,
-              child: Text('Kurang 1'),
+              child: const Text('Kurang 1'),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Center(
               child: InkWell(
                   onTap: () {
                     Navigator.pop(context);
                   },
-                  child: Text(
+                  child: const Text(
                     'Click here to go back',
                     textAlign: TextAlign.center,
                     overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(fontWeight: FontWeight.bold),
                   )),
             ),
           ],
