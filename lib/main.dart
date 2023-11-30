@@ -45,10 +45,10 @@ class _MyHomePageState extends State<MyHomePage> {
               Navigator.push(context,
                   MaterialPageRoute(builder: ((context) => ThirdPage())));
             },
-            child: Text(
+            child: const Text(
               textAlign: TextAlign.center,
               overflow: TextOverflow.ellipsis,
-              style: const TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(fontWeight: FontWeight.bold),
               'Klik Disini!',
             )),
       ),
