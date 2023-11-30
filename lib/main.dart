@@ -1,4 +1,4 @@
-import 'package:dicoding_submission/secondpage.dart';
+import 'package:dicoding_submission/thirdpage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: InkWell(
             onTap: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: ((context) => secondPage())));
+                  MaterialPageRoute(builder: ((context) => ThirdPage())));
             },
             child: Text(
               textAlign: TextAlign.center,
